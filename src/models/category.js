@@ -1,6 +1,7 @@
 'use strict';
 const {
-  Model
+  Model,
+  DATE
 } = require('sequelize');
 module.exports = (sequelize, DataTypes) => {
   class Category extends Model {
@@ -22,8 +23,8 @@ module.exports = (sequelize, DataTypes) => {
   }, {
     sequelize,
     modelName: 'Category',
-    tableName: 'categories', // tên table trên db
-    underscored: true // biến có dấu gạch dưới cd: create_at
+    tableName: 'categories' // tên table trên db
+    // biến có dấu gạch dưới cd: create_at
   });
   return Category;
 };
