@@ -20,11 +20,7 @@ const login = async (email, password) => {
     });
 
     return {
-        token,
-        user: {
-            email: user.email
-        }
-
+        token
     };
 };
 
