@@ -1,6 +1,6 @@
 const { where } = require("sequelize");
-const { Category, Brand } = require("../models");
-const category = require("../models/category");
+const { Category } = require("../models");
+
 
 exports.getAllCategories = async () => {
     return await Category.findAll();

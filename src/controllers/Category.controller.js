@@ -1,5 +1,4 @@
 const { where } = require('sequelize');
-const category = require('../models/category');
 const categoryService = require('../services/Category.service');
 
 exports.getAllCategories = async (req, res) => {
