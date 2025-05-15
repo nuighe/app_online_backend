@@ -5,12 +5,13 @@ const userRoute = require('./src/routes/User.route');
 const loginRoute = require('./src/routes/Login.route');
 const cors = require('cors');
 const app = express();
+const auth = require('./src/middleware/auth');
+
 
 app.use(cors());
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true })); //lây data từ FE lên
-
 
 
 
